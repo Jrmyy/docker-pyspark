@@ -5,7 +5,7 @@ ARG PYSPARK_VERSION=2.3.2
 # Install OpenJDK 8
 RUN \
   apt-get update && \
-  apt-get install -y openjdk-8-jdk && \
+  apt-get install -y openjdk-8-jdk curl unzip apt-transport-https && \
   rm -rf /var/lib/apt/lists/*
 
 # Install PySpark
